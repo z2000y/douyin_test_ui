@@ -1,0 +1,16 @@
+2025-08-06 17:05:10,132 - test_login - INFO - ===== 开始执行抖音登录测试 =====
+2025-08-06 17:05:10,134 - page_objects.login_page - INFO - 打开抖音页面: https://www.douyin.com/
+2025-08-06 17:05:10,340 - test_login - INFO - 已打开抖音首页: https://www.douyin.com/
+2025-08-06 17:05:10,341 - test_login - INFO - 开始添加Cookies
+2025-08-06 17:05:15,540 - utils.add_cookies - INFO - 已清除浏览器现有cookies
+2025-08-06 17:05:15,541 - utils.add_cookies - INFO - 成功加载58条cookies
+2025-08-06 17:05:15,995 - utils.add_cookies - INFO - cookies已成功添加到浏览器
+2025-08-06 17:05:15,995 - test_login - INFO - Cookies添加完成并刷新页面
+2025-08-06 17:05:15,995 - page_objects.login_page - INFO - 点击登录入口
+2025-08-06 17:05:18,106 - page_objects.login_page - INFO - 点击密码登录选项
+2025-08-06 17:05:19,236 - page_objects.login_page - INFO - 输入用户名: 18786262123
+2025-08-06 17:05:19,472 - page_objects.login_page - INFO - 输入密码
+2025-08-06 17:05:19,767 - page_objects.login_page - INFO - 点击登录按钮
+2025-08-06 17:05:20,018 - test_login - INFO - 已点击登录按钮，等待登录完成
+2025-08-06 17:05:25,338 - test_login - INFO - 登录验证成功，符合预期结果
+2025-08-06 17:05:25,847 - test_login - INFO - ===== 抖音登录测试执行完毕 =====

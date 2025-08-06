@@ -1,0 +1,4 @@
+2025-08-06 17:02:43,224 - test_login - INFO - ===== 开始执行抖音登录测试 =====
+2025-08-06 17:02:43,224 - page_objects.login_page - INFO - 打开抖音页面: https://www.douyin.com/
+2025-08-06 17:02:43,518 - test_login - INFO - 已打开抖音首页: https://www.douyin.com/
+2025-08-06 17:02:43,519 - page_objects.login_page - INFO - 点击登录入口

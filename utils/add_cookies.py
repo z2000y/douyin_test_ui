@@ -1,6 +1,8 @@
 from selenium import webdriver
 import json
 import time
+import pytest
+import os
 from .log_utils import logUtils
 
 # 初始化日志
@@ -29,3 +31,4 @@ def addCookies(driver):
     except Exception as e:
         logger.error(f"添加cookies时发生错误: {str(e)}")
         raise
+

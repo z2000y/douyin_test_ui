@@ -1,0 +1,17 @@
+WARNING  selenium.webdriver.common.selenium_manager:selenium_manager.py:138 Exception managing MicrosoftEdge: error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_138_WINDOWS)
+INFO     test_login:test_login.py:27 ===== 开始执行抖音登录测试 =====
+INFO     page_objects.login_page:login_page.py:29 打开抖音页面: https://www.douyin.com/
+INFO     test_login:test_login.py:34 已打开抖音首页: https://www.douyin.com/
+INFO     test_login:test_login.py:37 开始添加Cookies
+INFO     utils.add_cookies:add_cookies.py:15 已清除浏览器现有cookies
+INFO     utils.add_cookies:add_cookies.py:20 成功加载58条cookies
+INFO     utils.add_cookies:add_cookies.py:27 cookies已成功添加到浏览器
+INFO     test_login:test_login.py:40 Cookies添加完成并刷新页面
+INFO     page_objects.login_page:login_page.py:34 点击登录入口
+INFO     page_objects.login_page:login_page.py:39 点击密码登录选项
+INFO     page_objects.login_page:login_page.py:44 输入用户名: 18786262123
+INFO     page_objects.login_page:login_page.py:49 输入密码
+INFO     page_objects.login_page:login_page.py:54 点击登录按钮
+INFO     test_login:test_login.py:56 已点击登录按钮，等待登录完成
+INFO     test_login:test_login.py:68 登录验证成功，符合预期结果
+INFO     test_login:test_login.py:75 ===== 抖音登录测试执行完毕 =====
