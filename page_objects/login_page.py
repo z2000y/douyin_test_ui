@@ -6,11 +6,11 @@ class LoginPage(BasePage):
     URL = "https://www.douyin.com/"
     
     # 页面元素定位器
-    LOGIN_PAGE=(By.XPATH,"/html/body/div[2]/div[1]/div[4]/div[1]/div[1]/header/div/div/div[2]/div/pace-island/div/div[4]/div/div[1]/div")
-    PASSWORD_LOGIN_BUTTON = (By.XPATH, "/html/body/div[46]/div/div/div/div/div/article/div/div[2]/div/div[2]/div/div/div[1]/span[2]")  # 密码登录按钮
-    USERNAME_INPUT = (By.XPATH, "/html/body/div[46]/div/div/div/div/div/article/div/div[2]/div/div[2]/div/div/div[2]/div/div/div/div[1]/div/input")  # 账号输入框
-    PASSWORD_INPUT = (By.XPATH, "/html/body/div[46]/div/div/div/div/div/article/div/div[2]/div/div[2]/div/div/div[2]/div/div/div/div[2]/div/input")  # 密码输入框
-    LOGIN_BUTTON = (By.XPATH, "/html/body/div[46]/div/div/div/div/div/article/div/div[2]/div/div[2]/div/div/div[2]/div/div/div/div[2]/div/input")  # 登录按钮
+    LOGIN_PAGE=(By.CSS_SELECTOR,"#RkbQLUok > button > span > p")
+    PASSWORD_LOGIN_BUTTON = (By.XPATH, '//*[@id="douyin_login_comp_flat_panel"]/div/div[2]/div/div[2]/div/div/div[1]/span[2]')  # 密码登录按钮
+    USERNAME_INPUT = (By.XPATH, '//*[@id="douyin_login_comp_flat_panel"]/div/div[2]/div/div[2]/div/div/div[2]/div/div/div/div[1]/div/input')  # 账号输入框
+    PASSWORD_INPUT = (By.XPATH, '//*[@id="douyin_login_comp_flat_panel"]/div/div[2]/div/div[2]/div/div/div[2]/div/div/div/div[2]/div/input')  # 密码输入框
+    LOGIN_BUTTON = (By.XPATH, '//*[@id="douyin_login_comp_flat_panel"]/div/div[2]/div/div[2]/div/div/div[2]/div/div/div/div[4]/div')  # 登录按钮
     
     def __init__(self, driver):
         super().__init__(driver)

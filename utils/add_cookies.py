@@ -2,13 +2,13 @@ from selenium import webdriver
 import json
 import time
 
-# 填写webdriver的保存目录
-driver = webdriver.Edge()
+# # 填写webdriver的保存目录
+# driver = webdriver.Edge()
+#
+# # 记得写完整的url 包括http和https
+# driver.get('https://www.douyin.com')
 
-# 记得写完整的url 包括http和https
-driver.get('https://www.douyin.com')
-
-def addCookies():
+def addCookies(driver):
     # 首先清除由于浏览器打开已有的cookies
     driver.delete_all_cookies()
 

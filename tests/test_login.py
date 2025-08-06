@@ -18,9 +18,9 @@ def test_douyin_login(driver):
     login_page.open_page()
     
     # 添加cookies
-    addCookies()
+    addCookies(driver)
 
-    #打开抖音登录界面
+     #打开抖音登录界面
     login_page.click_login_page()
 
     # 点击密码登录
