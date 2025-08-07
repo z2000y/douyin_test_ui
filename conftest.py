@@ -1,7 +1,9 @@
-import pytest
 from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
-from webdriver_manager.chrome import ChromeDriverManager
+import subprocess
+import pytest
+import allure_pytest
+import allure
+from utils.log_utils import logUtils
 
 @pytest.fixture(scope="module")
 def driver():
@@ -12,3 +14,6 @@ def driver():
     yield driver
     # 测试结束后关闭浏览器
     driver.quit()
+
+
+

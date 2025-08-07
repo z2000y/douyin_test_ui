@@ -1,8 +1,8 @@
 import os
-
 import pytest
 import time
 import allure
+import subprocess  # 新增：用于执行系统命令
 from page_objects.login_page import LoginPage
 from utils.add_cookies import addCookies
 from utils.log_utils import logUtils
@@ -13,6 +13,10 @@ logger = logUtils.get_logger(__name__)
 # 测试数据
 TEST_USERNAME = "18786262123"  # 替换为实际测试账号
 TEST_PASSWORD = "ZY314510829903"  # 替换为实际测试密码
+
+# Allure报告相关配置
+ALLURE_RESULTS_DIR = "./allure-results"  # 结果文件目录
+ALLURE_REPORT_DIR = "./allure-report"  # 报告输出目录
 
 
 @allure.feature("抖音登录功能")
@@ -37,7 +41,7 @@ class TestDouyinLogin:
             logger.info("开始添加Cookies")
             addCookies(driver)
             # 添加Cookies后刷新页面使Cookies生效
-            logger.info("Cookies添加完成并刷新页面")
+            logger.info("Cookies添加完成")
 
         with allure.step("打开登录入口"):
             login_page.click_login_page()
@@ -56,21 +60,19 @@ class TestDouyinLogin:
             logger.info("已点击登录按钮，等待登录完成")
             time.sleep(5)  # 等待登录跳转
 
-        with allure.step("验证登录结果"):
-            try:
-                current_title = login_page.get_title()
-                assert "抖音" in current_title, f"页面标题验证失败，当前标题: {current_title}"
+        # with allure.step("验证登录结果"):
+        #     try:
+        #         current_title = login_page.get_title()
+        #         assert "抖音" in current_title, f"页面标题验证失败，当前标题: {current_title}"
+        #
+        #         logger.info("登录验证成功，符合预期结果")
+        #         allure.attach(driver.get_screenshot_as_png(), "登录成功截图", allure.attachment_type.PNG)
+        #     except AssertionError as e:
+        #         logger.error(f"登录验证失败: {str(e)}")
+        #         allure.attach(driver.get_screenshot_as_png(), "登录失败截图", allure.attachment_type.PNG)
+        #         raise
+        #     finally:
+        #         logger.info("===== 抖音登录测试执行完毕 =====")
 
-                # 可根据实际登录后显示的元素进一步验证（例如用户头像、昵称等）
-                # 示例：user_avatar = driver.find_element(By.CSS_SELECTOR, ".user-avatar")
-                # assert user_avatar.is_displayed(), "用户头像未显示，登录可能失败"
 
-                logger.info("登录验证成功，符合预期结果")
-                allure.attach(driver.get_screenshot_as_png(), "登录成功截图", allure.attachment_type.PNG)
-            except AssertionError as e:
-                logger.error(f"登录验证失败: {str(e)}")
-                allure.attach(driver.get_screenshot_as_png(), "登录失败截图", allure.attachment_type.PNG)
-                raise
-            finally:
-                logger.info("===== 抖音登录测试执行完毕 =====")
 

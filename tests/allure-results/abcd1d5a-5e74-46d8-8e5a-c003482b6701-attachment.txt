@@ -1,5 +1,0 @@
-WARNING  selenium.webdriver.common.selenium_manager:selenium_manager.py:138 Exception managing MicrosoftEdge: error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_138_WINDOWS)
-INFO     test_login:test_login.py:27 ===== 开始执行抖音登录测试 =====
-INFO     page_objects.login_page:login_page.py:29 打开抖音页面: https://www.douyin.com/
-INFO     test_login:test_login.py:34 已打开抖音首页: https://www.douyin.com/
-INFO     page_objects.login_page:login_page.py:34 点击登录入口

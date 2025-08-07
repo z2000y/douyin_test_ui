@@ -14,7 +14,7 @@ def addCookies(driver):
         driver.delete_all_cookies()
         logger.info("已清除浏览器现有cookies")
 
-        with open('cookies.txt', 'r') as f:
+        with open('./utils/cookies.txt', 'r') as f:
             # 使用json读取cookies
             cookies_list = json.load(f)
             logger.info(f"成功加载{len(cookies_list)}条cookies")

@@ -1,9 +1,0 @@
-2025-08-06 16:52:27,078 - test_login - INFO - ===== 开始执行抖音登录测试 =====
-2025-08-06 16:52:27,078 - page_objects.login_page - INFO - 打开抖音页面: https://www.douyin.com/
-2025-08-06 16:52:27,307 - test_login - INFO - 已打开抖音首页: https://www.douyin.com/
-2025-08-06 16:52:27,307 - test_login - INFO - 开始添加Cookies
-2025-08-06 16:52:30,896 - utils.add_cookies - INFO - 已清除浏览器现有cookies
-2025-08-06 16:52:30,897 - utils.add_cookies - INFO - 成功加载58条cookies
-2025-08-06 16:52:33,730 - utils.add_cookies - INFO - cookies已成功添加到浏览器
-2025-08-06 16:52:34,341 - test_login - INFO - Cookies添加完成并刷新页面
-2025-08-06 16:52:34,342 - page_objects.login_page - INFO - 点击登录入口
