@@ -23,6 +23,9 @@ class BasePage:
         self.find_element(locator).clear()
         self.find_element(locator).send_keys(text)
     
+    def get_url(self):
+        """获取页面网址"""
+        return self.driver.url
     def get_title(self):
         """获取页面标题"""
         return self.driver.title

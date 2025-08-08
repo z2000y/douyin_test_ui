@@ -40,7 +40,6 @@ class TestDouyinLogin:
         with allure.step("添加登录Cookies"):
             logger.info("开始添加Cookies")
             addCookies(driver)
-            # 添加Cookies后刷新页面使Cookies生效
             logger.info("Cookies添加完成")
 
         with allure.step("打开登录入口"):
